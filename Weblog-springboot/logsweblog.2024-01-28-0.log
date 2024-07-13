@@ -1,0 +1,7 @@
+2024-01-28 14:31:02.358 [main] INFO  com.wl.weblog.web.WeblogWebApplicationTests - Starting WeblogWebApplicationTests using Java 19.0.1 with PID 18344 (started by 86183 in D:\Code\Weblog\Weblog-springboot\weblog-web)
+2024-01-28 14:31:02.359 [main] INFO  com.wl.weblog.web.WeblogWebApplicationTests - The following 1 profile is active: "prod"
+2024-01-28 14:31:03.308 [main] INFO  com.wl.weblog.web.WeblogWebApplicationTests - Started WeblogWebApplicationTests in 1.309 seconds (process running for 2.088)
+2024-01-28 14:31:03.931 [main] INFO  com.wl.weblog.web.WeblogWebApplicationTests - info
+2024-01-28 14:31:03.932 [main] WARN  com.wl.weblog.web.WeblogWebApplicationTests - warn
+2024-01-28 14:31:03.932 [main] ERROR com.wl.weblog.web.WeblogWebApplicationTests - error
+2024-01-28 14:31:03.932 [main] INFO  com.wl.weblog.web.WeblogWebApplicationTests - name: wl

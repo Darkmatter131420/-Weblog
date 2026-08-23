@@ -1,0 +1,1 @@
+(()=>{const bar=document.createElement('div');bar.className='reading-progress';document.body.prepend(bar);const update=()=>{const h=document.documentElement,s=h.scrollHeight-h.clientHeight;bar.style.transform=`scaleX(${s?Math.min(1,Math.max(0,h.scrollTop/s)):0})`};addEventListener('scroll',update,{passive:true});update()})();

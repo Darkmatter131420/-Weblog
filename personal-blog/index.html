@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Darkmatter 的个人博客：记录代码、阅读、产品与生活。">
+  <title>Darkmatter · 个人博客</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="返回首页"><span>DM</span> Darkmatter</a>
+      <div class="nav-links">
+        <a href="#articles">文章</a>
+        <a href="#about">关于</a>
+        <a href="https://github.com/Darkmatter131420" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+      <button id="themeToggle" class="icon-button" aria-label="切换主题">☾</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">PERSONAL NOTES · 2026</p>
+        <h1>把想法写下来，<br><em>把代码跑起来。</em></h1>
+        <p class="hero-text">这里是 Darkmatter 的个人空间。记录技术实践、AI、阅读、产品思考，以及那些值得回头看的小事。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#articles">开始阅读 ↓</a>
+          <a class="button secondary" href="#about">了解我</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="orb"></div>
+        <div class="terminal">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>~/notes</span></div>
+          <pre><code>$ whoami
+Darkmatter131420
+
+$ focus
+software · ai · books
+
+$ status
+<span>building & learning...</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles" class="articles container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LATEST NOTES</p>
+          <h2>最近写了什么</h2>
+        </div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索文章…" aria-label="搜索文章"></label>
+      </div>
+
+      <div class="tag-row" id="tagRow">
+        <button class="tag active" data-tag="all">全部</button>
+        <button class="tag" data-tag="技术">技术</button>
+        <button class="tag" data-tag="AI">AI</button>
+        <button class="tag" data-tag="阅读">阅读</button>
+        <button class="tag" data-tag="随笔">随笔</button>
+      </div>
+
+      <div class="post-grid" id="postGrid">
+        <article class="post featured" data-tags="技术 AI" data-title="从一个 AI 工具开始，重新思考我的开发工作流">
+          <div class="post-meta"><span>AI · 技术</span><time>2026-08-20</time></div>
+          <h3>从一个 AI 工具开始，重新思考我的开发工作流</h3>
+          <p>AI 真正改变开发效率的地方，不只是“帮我写代码”，而是让搜索、设计、实现、验证之间的边界变得更薄。</p>
+          <a href="#" class="read-more" data-demo="本文是博客示例文章，可直接替换为你的 Markdown/真实文章。">阅读全文 <span>→</span></a>
+        </article>
+
+        <article class="post" data-tags="技术" data-title="我为什么喜欢把复杂问题拆成小实验">
+          <div class="post-meta"><span>技术</span><time>2026-08-12</time></div>
+          <h3>我为什么喜欢把复杂问题拆成小实验</h3>
+          <p>遇到一个陌生系统时，与其先写完整方案，不如先验证一个最小假设。小实验是最快的认知加速器。</p>
+          <a href="#" class="read-more" data-demo="把你的真实文章内容放到这里，或者将页面改造成静态 Markdown 博客。">阅读全文 <span>→</span></a>
+        </article>
+
+        <article class="post" data-tags="阅读" data-title="最近读完的三本书，以及我留下的三个问题">
+          <div class="post-meta"><span>阅读</span><time>2026-07-28</time></div>
+          <h3>最近读完的三本书，以及我留下的三个问题</h3>
+          <p>读书不一定为了得到答案。有些书真正留下来的，是几个会在未来反复出现的问题。</p>
+          <a href="#" class="read-more" data-demo="这里可以继续扩展成书评、阅读清单或年度阅读记录。">阅读全文 <span>→</span></a>
+        </article>
+
+        <article class="post" data-tags="随笔" data-title="给未来自己的一个小小备忘录">
+          <div class="post-meta"><span>随笔</span><time>2026-07-06</time></div>
+          <h3>给未来自己的一个小小备忘录</h3>
+          <p>不要只追逐那些看得见的结果。持续学习、持续记录，本身就是一种复利。</p>
+          <a href="#" class="read-more" data-demo="个人博客最重要的是持续更新，这篇只是首页展示用的占位内容。">阅读全文 <span>→</span></a>
+        </article>
+      </div>
+      <p id="emptyState" class="empty" hidden>没有找到匹配的文章。</p>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="about-mark">DM</div>
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2>你好，我是 Darkmatter。</h2>
+        <p>我喜欢写代码，也喜欢研究新工具、阅读和把复杂的东西讲清楚。这个博客没有宏大的主题，只希望成为一个长期积累的数字花园。</p>
+        <div class="facts"><span>⌘ Software</span><span>✦ AI</span><span>▣ Reading</span><span>✎ Writing</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year"></span> Darkmatter</span>
+    <span>Built with HTML · CSS · JavaScript</span>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="./script.js"></script>
+</body>
+</html>

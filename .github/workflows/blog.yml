@@ -30,6 +30,10 @@ jobs:
         working-directory: personal-blog
         run: node build.mjs
 
+      - name: Fix root-page navigation
+        working-directory: personal-blog
+        run: node fix-root-links.mjs
+
       - name: Generate OG cards
         working-directory: personal-blog
         run: node og-generator.js
